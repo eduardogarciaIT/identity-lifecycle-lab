@@ -2,7 +2,7 @@
 
 This repository demonstrates the administration of a Windows Server Active Directory environment deployed using Microsoft Hyper-V. The lab covers the complete identity lifecycle—from provisioning to secure offboarding—as well as Role-Based Access Control (RBAC), NTFS file share permissions, and Group Policy Object (GPO) deployment.
 
-## 1. Active Directory (On-Premises Identity Management)
+### Active Directory (On-Premises Identity Management)
 *This section outlines traditional user lifecycle management, demonstrating both the Active Directory Users and Computers (ADUC) graphical interface and PowerShell automation.*
 
 ### Organizational Unit (OU) Architecture
