@@ -13,13 +13,7 @@ To ensure proper application of Group Policy Objects (GPOs) and logical structur
 New-ADOrganizationalUnit -Name "IT Department" -Path "DC=lab,DC=local"
 New-ADOrganizationalUnit -Name "HR Department" -Path "DC=lab,DC=local"
 
-### Step 1: Organizational Unit (OU) Architecture
-To ensure proper application of Group Policy Objects (GPOs) and logical structuring, dedicated Organizational Units were created for distinct departments using PowerShell and verified via the Active Directory Users and Computers (ADUC) GUI.
-
-**Command Executed:**
-```powershell
-New-ADOrganizationalUnit -Name "IT Department" -Path "DC=lab,DC=local"
-New-ADOrganizationalUnit -Name "HR Department" -Path "DC=lab,DC=local"
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/940d6783-0e0c-4d63-9d4f-efb966e239ef" />
 
 
 ### Step 2: User Account Provisioning
