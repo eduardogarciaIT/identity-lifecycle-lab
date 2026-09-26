@@ -6,15 +6,22 @@ This repository demonstrates the end-to-end identity lifecycle—covering the cr
 *This section outlines traditional user lifecycle management, demonstrating both the Active Directory Users and Computers (ADUC) graphical interface and PowerShell automation.*
 
 ### Step 1: Organizational Unit (OU) Architecture
-To ensure proper application of Group Policy Objects (GPOs) and logical structuring, dedicated Organizational Units were created for distinct departments. 
+To ensure proper application of Group Policy Objects (GPOs) and logical structuring, dedicated Organizational Units were created for distinct departments using PowerShell and verified via the Active Directory Users and Computers (ADUC) GUI.
 
-* **GUI Method (ADUC):**
-  > 📸 **[Drag and drop your ADUC OU structure screenshot here]**
+**Command Executed:**
+```powershell
+New-ADOrganizationalUnit -Name "IT Department" -Path "DC=lab,DC=local"
+New-ADOrganizationalUnit -Name "HR Department" -Path "DC=lab,DC=local"
 
-* **Command-Line Method (PowerShell):**
-  ```powershell
-  New-ADOrganizationalUnit -Name "IT Department" -Path "DC=yourdomain,DC=com"
-  New-ADOrganizationalUnit -Name "HR Department" -Path "DC=yourdomain,DC=com"
+### Step 1: Organizational Unit (OU) Architecture
+To ensure proper application of Group Policy Objects (GPOs) and logical structuring, dedicated Organizational Units were created for distinct departments using PowerShell and verified via the Active Directory Users and Computers (ADUC) GUI.
+
+**Command Executed:**
+```powershell
+New-ADOrganizationalUnit -Name "IT Department" -Path "DC=lab,DC=local"
+New-ADOrganizationalUnit -Name "HR Department" -Path "DC=lab,DC=local"
+
+
 ### Step 2: User Account Provisioning
 New employee accounts are provisioned with standard naming conventions, assigned to their respective department OUs, and configured with temporary passwords requiring a reset upon first logon to maintain security compliance.
 
