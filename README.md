@@ -13,6 +13,7 @@ To ensure proper application of Group Policy Objects (GPOs) and logical structur
 New-ADOrganizationalUnit -Name "IT Department" -Path "DC=lab,DC=local"
 New-ADOrganizationalUnit -Name "HR Department" -Path "DC=lab,DC=local"
 
+
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/940d6783-0e0c-4d63-9d4f-efb966e239ef" />
 
 
